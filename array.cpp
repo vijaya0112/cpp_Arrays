@@ -1,23 +1,33 @@
 #include<bits/stdc++.h>
 using namespace std;
-int main() {
-	int n;
+int main()
+{
+	int n,flag=0,id;
+	cout<<"Enter n value:";
 	cin>>n;
-	int arr[n];
+	int a[n];
+	cout<<"Enter the values: ";
 	for(int i=0;i<n;i++)
-    {
-		cin>>arr[i];
-	}
-	int min=arr[0];
-	int count=0;
-	for(int i=0;i<n;i++) 
 	{
-		if(min>=arr[i])
+	   cin>>a[i];
+    }
+	for(int i=0;i<n;i++)
+	{
+		int count=0;
+		for(int j=0;j<n;j++)
 		{
-			min = arr[i];
-			count++;
+			if(a[i]==a[j])
+			{
+			   count+=1;
+	        }
+	    }
+		if(flag<count)
+		{
+			flag=count;
+			id=a[i];
 		}
 	}
-	cout<<"min value:"<<min;
-	cout<<"Count:"<<count;
+	cout<<"The person's ID is: "<<id<<" and his count is "<<flag;
 }
+
+                    
