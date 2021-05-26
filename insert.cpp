@@ -10,16 +10,15 @@ int main()
 	if(n==c)
 	{
 		cout<<"Insertion is not possible"; 
-		 
-    }
-    else
-    {
+        }
+       else
+       {
     	cout<<"Enter the elements:";
 	int arr[n];
 	for(int i=0;i<n;i++)
 	{	
 		cin>>arr[i];
-    }
+        }
 	cout<<"Enter the position in which the element has to insert:";
 	cin>>pos;
 	cout<<"Enter the element to be inserted:";
