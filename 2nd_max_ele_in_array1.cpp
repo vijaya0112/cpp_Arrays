@@ -40,11 +40,13 @@ int main()
 			}
 		}
 	}
-	cout<<"2nd maximum element is:"<<arr[res];
 	if(res==-1)
 	{
 		cout<<"Element not found";
 	}
-	
+	else
+	{
+		cout<<"2nd maximum element is:"<<arr[res];
+	}
 	return 0;
 }
