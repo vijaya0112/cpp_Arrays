@@ -30,6 +30,6 @@ int main()
 			}
 		}
 	}
-	cout<<val2;
+	cout<<"2nd maximum element: "<<val2;
 	
 }
